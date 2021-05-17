@@ -1,0 +1,116 @@
+/* .App {
+  display: flex;
+  flex-direction: column;
+} */
+
+nav {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #000;
+  background-color: #ddd;
+  position: fixed;
+  top: 4.10rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+header {
+  color: #000;
+  background-color: #fff;
+  padding: 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.active {
+  visibility: visible;
+  transition: all 0.5s;
+  display: flex;
+  border-bottom: 3px solid #fff;
+  justify-content: space-around;
+}
+/* 
+.active:before {
+  position: absolute;
+  background: purple;
+  height: 2px;
+  content: '';
+  width: 50%;
+  bottom: -2px;
+  left: 0;
+} */
+
+.hidden {
+  visibility: hidden;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: space-around;
+  transform: translateY(-100%);
+}
+
+.hidden2 {
+  visibility: visible;
+  transition: all 0.5s;
+  display: flex;
+  border-bottom: 3px solid #fff;
+  justify-content: space-around;
+  transform: translateY(-150%);
+}
+
+/* .hidden2:before {
+  position: absolute;
+  background: purple;
+  height: 2px;
+  content: '';
+  width: 50%;
+  bottom: -2px;
+  right: 0;
+} */
+
+.purchase {
+  color: purple;
+  font-weight: bolder;
+  border-bottom: 3px solid purple;
+  width: 50%;
+  padding-bottom:-1rem
+}
+
+.wishlist {
+  color: purple;
+  font-weight: bolder;
+  border-bottom: 3px solid purple;
+  width: 50%;
+  /* padding-bottom:1.7rem */
+}
+
+
+.portion {
+  flex: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.portion2 {
+  flex: 50%;
+  display: flex;
+}
+
+.portion2 > strong {
+  margin-left: 3rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.pasage {
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+.pasage2 {
+  display: flex;
+}
